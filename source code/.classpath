@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/crittercism_v4_5_4_sdkonly.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/locSDK_4.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/ormlite-android-4.45.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/ormlite-core-4.45.jar"/>
+	<classpathentry kind="lib" path="D:/Java/AndroidWork/Ting/source code/libs/retrofit-1.6.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

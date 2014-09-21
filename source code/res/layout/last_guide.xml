@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iweather4">
+
+    <Button
+        android:id="@+id/guide_start_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="131dp"
+        android:text="@string/app_start"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+</RelativeLayout>

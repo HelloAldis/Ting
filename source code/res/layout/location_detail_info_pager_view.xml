@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kurtis="http://schemas.android.com/apk/res/com.kindazrael.tingweather"
+    android:id="@+id/location_info_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sunny" >
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/refresh_weather_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_refresh" />
+    
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_menu" />
+
+    <com.kindazrael.tingweather.ui.widgets.CustomTextView
+        android:id="@+id/city_name_text_view"
+        style="@style/white_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/default_city"
+        kurtis:textStyle="crs" />
+
+    <com.kindazrael.tingweather.ui.widgets.CustomTextView
+        android:id="@+id/weather_status_text_view"
+        style="@style/white_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_name_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_weather"
+        kurtis:textStyle="crs" />
+
+    <com.kindazrael.tingweather.ui.widgets.CustomTextView
+        android:id="@+id/tempture_text_view"
+        style="@style/white_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_status_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_tempture"
+        kurtis:textStyle="htu" />
+
+    <LinearLayout
+        android:id="@+id/botton_weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_subtransparent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/today_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_today"
+                kurtis:textStyle="crs" />
+
+            <ImageView
+                android:id="@+id/today_weather_image_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_unknown"
+                android:contentDescription="@string/default_city" />
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/today_weather_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_weather"
+                kurtis:textStyle="crs" />
+            
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/today_weather_temp_duration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_temp_duration"
+                kurtis:textStyle="crs" 
+                style="@style/white_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/tomorrow_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_tomorrow"
+                kurtis:textStyle="crs" />
+
+            <ImageView
+                android:id="@+id/tomorrow_weather_image_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_unknown"
+                android:contentDescription="@string/default_city" />
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/tomorrow_weather_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_weather"
+                kurtis:textStyle="crs" />
+            
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/tomorrow_weather_temp_duration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_temp_duration"
+                kurtis:textStyle="crs" 
+                style="@style/white_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/lastday_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_lastday"
+                kurtis:textStyle="crs" />
+
+            <ImageView
+                android:id="@+id/lastday_weather_image_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_unknown"
+                android:contentDescription="@string/default_city" />
+
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/lastday_weather_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_weather"
+                kurtis:textStyle="crs" />
+            
+            <com.kindazrael.tingweather.ui.widgets.CustomTextView
+                android:id="@+id/lastday_weather_temp_duration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_temp_duration"
+                kurtis:textStyle="crs" 
+                style="@style/white_17"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

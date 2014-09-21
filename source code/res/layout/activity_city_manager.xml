@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <GridView
+        android:id="@+id/city_list_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:listSelector="@color/common_transparent"
+        android:stretchMode="columnWidth"
+        android:cacheColorHint="@color/common_transparent"
+        android:verticalSpacing="10dp" />
+
+</RelativeLayout>

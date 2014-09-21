@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="IWeatherThems" parent="android:Theme">
+        <item name="android:windowTitleSize">48dip</item>
+        <item name="android:windowBackground">@color/content_grey_bg</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:windowAnimationStyle">@style/ActivateAnimation</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/navigationbar_background</item>
+    </style>
+
+    <style name="ActivateAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    
+     <!-- The duration (in milliseconds) of a short animation. -->
+    <integer name="config_activityDefaultDur">300</integer>
+
+</resources>

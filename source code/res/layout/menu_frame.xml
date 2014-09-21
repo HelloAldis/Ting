@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_city_list_bg"  >
+
+    <RelativeLayout
+        android:id="@+id/add_city_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/search_city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hot_city_list_grid_view"
+            android:layout_alignParentRight="@+id/hot_city_list_grid_view"
+            android:layout_margin="10dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_name_edit_text"
+                style="@style/gray_02_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownHeight="350dp"
+                android:dropDownVerticalOffset="1dp"
+                android:hint="@string/text_hint_search_city"
+                android:background="@color/common_transparent"
+                android:inputType="textNoSuggestions"
+                android:padding="5dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/search_name_edit_text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/icon_delete" />
+        </RelativeLayout>
+        
+        <TextView 
+        		android:layout_height="1dp"
+        		android:layout_width="match_parent"
+        		android:background="#dae9d8"
+        		android:layout_below="@+id/search_city_layout"/>
+
+        <GridView
+            android:id="@+id/hot_city_list_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_city_layout"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@color/common_transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" />
+
+    </RelativeLayout>
+    
+    </FrameLayout>

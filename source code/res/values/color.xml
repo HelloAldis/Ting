@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="content_grey_bg">#e2e2e2</color>
+    <color name="common_city_list_bg">#e8f4f1</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="common_subtransparent">#a0000000</color>
+    <color name="bg_main_bottom">#b24497a1</color>
+    <color name="black">#FFFFFF</color>
+    <!-- 把定义背景颜色的代码放在下面 -->
+    <color name="bg_sunny">#83cdcc</color>
+    <color name="bg_black">#000000</color>
+</resources>

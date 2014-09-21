@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">婷天气</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="app_start">Start</string>
+    
+    <!-- Default value section -->
+    <string name="default_tempture">0</string>
+    <string name="default_weather">未知天气</string>
+    <string name="default_city">未知城市</string>
+    <string name="default_temp_duration">未知</string>
+    
+    
+    <!-- Screen name section -->
+    <string name="screen_name_city_manager">城市管理</string>
+    <string name="screen_name_city_select">选择城市</string>
+    <string name="screen_name_welcome">欢迎页面</string>
+    
+    <string name="sort_add_city">添加城市</string>
+    
+    
+    <string name="text_hint_search_city">输入城市</string>
+    <string name="text_search_more_city">更多城市</string>
+    
+    <string name="text_today">今天</string>
+    <string name="text_tomorrow">明天</string>
+    <string name="text_lastday">后天</string>
+    
+    <string name="msg_add_city_success">城市添加成功!</string>
+    <string name="msg_add_city_failure">城市添加失败!</string>
+    
+    <string-array name="hot_city_list">
+        <item>自动定位</item>
+        <item>北京</item>
+        <item>上海</item>
+        
+        <item>广州</item>
+        <item>深圳</item>
+        <item>武汉</item>
+        
+        <item>南京</item>
+        <item>西安</item>
+        <item>成都</item>
+        
+        <item>杭州</item>
+        <item>重庆</item>
+        <item>沈阳</item>
+        
+        <item>哈尔滨</item>
+        <item>长沙</item>
+        <item>苏州</item>
+        
+        <item>大连</item>
+        <item>厦门</item>
+        <item>天津</item>
+    </string-array>
+
+</resources>

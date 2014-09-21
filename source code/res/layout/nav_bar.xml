@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp" >
+
+    <Button
+        android:id="@+id/nav_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/nav_bak"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nav_screen_title"
+        style="@style/gray_01_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/screen_name_city_manager" />
+
+    <Button
+        android:id="@+id/nav_refresh_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/icon_refresh"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/nav_settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/add_city_board"
+        android:padding="4dp"
+        android:text="@string/screen_name_city_manager"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/nav_location_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/nav_location"
+        android:visibility="gone" />
+
+</RelativeLayout>

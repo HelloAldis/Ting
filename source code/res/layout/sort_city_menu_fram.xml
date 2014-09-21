@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sort_city_menu_fram"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_city_list_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/bt_addcity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="left|center"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            style="@style/gray_02_16"
+            android:text="添加城市"
+            android:background="@color/common_transparent"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_add"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <TextView 
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#dae9d8"/>
+    
+    <com.kindazrael.tingweather.ui.widgets.DragListView
+        android:id="@+id/other_drag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#cad2d4"
+        android:divider="#dae9d8"
+        android:dividerHeight="1dp"
+        android:listSelector="#dae9d8"/>
+
+    <Button
+        android:id="@+id/add_city_in_drag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#00000000"/>
+
+</LinearLayout>

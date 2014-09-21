@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/search_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <AutoCompleteTextView
+            style="@style/gray_02_14"
+            android:id="@+id/search_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search_city"
+            android:hint="@string/text_hint_search_city"
+            android:dropDownHeight="350dp"
+            android:dropDownVerticalOffset="1dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_alignRight="@+id/search_name_edit_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/search_clear_btn_normal" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/hot_city_list_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_city_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@color/common_transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+    
+    <TextView 
+        android:id="@+id/search_more_text_view"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/text_search_more_city"
+        android:background="@drawable/bg_add_more_city"
+        />
+
+</RelativeLayout>
